@@ -1,14 +1,1 @@
-name: new issues in workflow
-on:
-  issues:
-    types: [opened]
-jobs:
-   comment-with-action:
-    runs-on: ubuntu-latest
-    steps:
-      - name: dump GitHub context
-        run: echo'${{ toJSON(GitHub.event) }}' | jq
-        shell: bash
 
-          
-    
